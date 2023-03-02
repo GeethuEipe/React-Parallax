@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+}
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(
+    to top,
+    #c8fbff 0%,
+    #37ecba 80%,
+    #48c6ef 100%
+  );
+}
+
+.header-100 {
+  height: 100vh;
+}
+
+.header-50 {
+  height: 50vh;
+}
+
+.header-25 {
+  height: 25vh;
+}
+
+.header {
+  background: url('/header.png');
+  background-repeat: no-repeat, repeat;
+  background-position: center center;
+  background-size: auto 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .big-text {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px 40px;
+  font-size: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #09523e;
+  font-weight: bold;
+}
+
+.parallax {
+  background-size: 100% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  padding: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 4px #999;
+  width: 300px;
+  min-height: 50px;
+  border-radius: 4px;
+  z-index: 9;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.balloon {
+  position: absolute;
+  top: 95%;
+  left: 150px;
+  transition: all 0.1s;
+}
+
+.balloon img {
+  width: 350px;
+}
+
+.balloon.small img {
+  width: 150px;
+}
+
+.balloon.medium img {
+  width: 200px;
+}
+
+.cloud {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  background-image: url('/cloud.svg');
+  background-size: cover;
+}
+
+.cloud.medium {
+  width: 150px;
+  height: 150px;
+}
+
+.cloud.small {
+  width: 100px;
+  height: 100px;
+}
+
+.footer {
+  background-image: linear-gradient(-130deg, #4facfe 0%, #00f2fe 100%);
+  height: 300px;
+  width: 1440px;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -300px;
+}
+
+.footer img.pirate {
+  width: 600px;
+  margin-right: -150px;
+}
+
+.footer img.island {
+  margin-left: -160px;
+}
